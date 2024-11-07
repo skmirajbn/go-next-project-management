@@ -1,0 +1,70 @@
+:root {
+  --color-primary: #5d87ff;
+  --color-primary-emphasis: #4f73d9;
+  --color-secondary: #49beff;
+  --color-secondary-emphasis: #3ea2d9;
+  --color-lightprimary: #5d87ff20;
+  --color-lightsecondary: #49beff20;
+
+  --swiper-theme-color: #007aff;
+
+  --color-info: #539bff;
+  --color-success: #13deb9;
+  --color-warning: #ffae1f;
+  --color-error: #fa896b;
+  --color-lightsuccess: #13deb920;
+  --color-lighterror: #fa896b20;
+  --color-lightinfo: #ebf3fe;
+  --color-darkinfo: #223662;
+  --color-lightwarning: #ffae1f20;
+  --color-white: #fff;
+  --color-dark: #202936;
+  --color-border: #dfe5ef;
+  --color-darkborder: #333f55;
+  --color-link: #2a3547;
+  --color-muted: #5a6a85;
+  --color-darklink: #7c8fac;
+  --color-lightgray: #f6f9fc;
+  --color-bgmuted: #eff4fa;
+  --color-darkgray: #465670;
+  --color-bodytext: #5a6a85;
+  --color-error-emphasis: #d5745b;
+  --color-darkmuted: #2a3851;
+  --color-lightmuted: #5d7287;
+  --color-warning-emphasis: #d9941a;
+  --color-success-emphasis: #10bd9d;
+  --color-info-emphasis: #3184f7;
+  --color-gray-emphasis: #99aaba;
+  --color-light-emphasis: #dfe5ef;
+}
+
+.text-primary {
+  color: #5d87ff;
+}
+
+.bg-lightprimary {
+  background-color: #5d87ff20;
+}
+.form-control input {
+  width: 100%;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: var(--color-border);
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-ring-color: transparent;
+}
+.form-control input:focus {
+  border-color: var(--color-primary);
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-color: transparent;
+  --tw-ring-offset-width: 0px;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}

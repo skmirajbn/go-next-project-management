@@ -1,0 +1,27 @@
+services:
+  go-app:
+    build:
+      context: ./goBackend
+      dockerfile: Dockerfile
+    volumes:
+      - ./goBackend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+
+  nextjs-app:
+    build:
+      context: ./nextFrontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./nextFrontend:/app
+    ports:
+      - "3000:3000"
+    command: ["sh", "-c", "npm install && npm run dev"]
+    environment:
+      - NODE_ENV=development
+
+networks:
+  default:
+    driver: bridge
